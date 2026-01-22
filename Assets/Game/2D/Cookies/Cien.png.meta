@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7632c27208b97974ca7980e67801c2e1
+guid: 558f3c312d17f424dae5c77f912246bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 641780892481681994
-    second: Talerz_0
+      213: 445015514871192339
+    second: Cien_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Talerz_0
+      name: Cien_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 378
-        height: 377
+        width: 475
+        height: 473
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a4af008425018e800800000000000000
-      internalID: 641780892481681994
+      spriteID: 31b5f63c0430d2600800000000000000
+      internalID: 445015514871192339
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Talerz_0: 641780892481681994
+      Cien_0: 445015514871192339
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
