@@ -8,9 +8,6 @@ TextureImporter:
   - first:
       213: 5243829884371547796
     second: Steal_hover_1
-  - first:
-      213: -1160098154276815628
-    second: Steal_hover_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -110,8 +107,8 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 3
-        width: 940
+        y: 37
+        width: 939
         height: 940
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,10 +128,10 @@ TextureImporter:
       name: Steal_hover_1
       rect:
         serializedVersion: 2
-        x: 1040
-        y: 559
-        width: 7
-        height: 13
+        x: 633
+        y: 33
+        width: 34
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,28 +142,6 @@ TextureImporter:
       bones: []
       spriteID: 4963b803f73d5c840800000000000000
       internalID: 5243829884371547796
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steal_hover_2
-      rect:
-        serializedVersion: 2
-        x: 633
-        y: 0
-        width: 34
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4fc7eb900e086efe0800000000000000
-      internalID: -1160098154276815628
       vertices: []
       indices: 
       edges: []
@@ -187,7 +162,6 @@ TextureImporter:
     nameFileIdTable:
       Steal_hover_0: 3508467673943288924
       Steal_hover_1: 5243829884371547796
-      Steal_hover_2: -1160098154276815628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

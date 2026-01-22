@@ -26,9 +26,6 @@ TextureImporter:
   - first:
       213: 1571615983736763361
     second: Steal_deafult_7
-  - first:
-      213: 177903018786439935
-    second: Steal_deafult_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,9 +125,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 166
-        width: 512
-        height: 487
+        y: 178
+        width: 492
+        height: 482
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +146,10 @@ TextureImporter:
       name: Steal_deafult_1
       rect:
         serializedVersion: 2
-        x: 728
-        y: 462
-        width: 6
-        height: 12
+        x: 77
+        y: 56
+        width: 70
+        height: 83
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +168,10 @@ TextureImporter:
       name: Steal_deafult_2
       rect:
         serializedVersion: 2
-        x: 91
-        y: 42
-        width: 71
-        height: 83
+        x: 129
+        y: 67
+        width: 53
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +190,10 @@ TextureImporter:
       name: Steal_deafult_3
       rect:
         serializedVersion: 2
-        x: 144
-        y: 53
-        width: 53
-        height: 80
+        x: 197
+        y: 62
+        width: 54
+        height: 88
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +212,10 @@ TextureImporter:
       name: Steal_deafult_4
       rect:
         serializedVersion: 2
-        x: 213
-        y: 48
-        width: 54
-        height: 89
+        x: 254
+        y: 61
+        width: 60
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +234,10 @@ TextureImporter:
       name: Steal_deafult_5
       rect:
         serializedVersion: 2
-        x: 270
-        y: 47
-        width: 60
-        height: 96
+        x: 321
+        y: 64
+        width: 54
+        height: 81
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +256,10 @@ TextureImporter:
       name: Steal_deafult_6
       rect:
         serializedVersion: 2
-        x: 338
-        y: 50
-        width: 54
-        height: 81
+        x: 375
+        y: 59
+        width: 47
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +278,10 @@ TextureImporter:
       name: Steal_deafult_7
       rect:
         serializedVersion: 2
-        x: 392
-        y: 45
-        width: 48
-        height: 98
+        x: 374
+        y: 13
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,28 +292,6 @@ TextureImporter:
       bones: []
       spriteID: 1e3b4f119608fc510800000000000000
       internalID: 1571615983736763361
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Steal_deafult_8
-      rect:
-        serializedVersion: 2
-        x: 392
-        y: 0
-        width: 29
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ff24c3f5ad9087200800000000000000
-      internalID: 177903018786439935
       vertices: []
       indices: 
       edges: []
@@ -343,7 +318,6 @@ TextureImporter:
       Steal_deafult_5: -7228423465141098298
       Steal_deafult_6: 6775002178091660748
       Steal_deafult_7: 1571615983736763361
-      Steal_deafult_8: 177903018786439935
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
