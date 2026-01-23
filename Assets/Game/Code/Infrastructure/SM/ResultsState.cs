@@ -11,7 +11,7 @@ namespace Game.Code.Infrastructure.SM
 
         public void Enter(object param = null)
         {
-            
+            Game.Instance.MainHud.ShowResults();
         }
 
         public void Update()
@@ -21,7 +21,7 @@ namespace Game.Code.Infrastructure.SM
 
         public void Exit(object param = null)
         {
-            
+            Game.Instance.MainHud.HideResults();
         }
     }
 }

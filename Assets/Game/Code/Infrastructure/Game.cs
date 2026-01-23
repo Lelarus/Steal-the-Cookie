@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Game.Code.Logic;
+using Game.Code.UI;
 using UnityEngine;
 using TMPro;
 
@@ -8,6 +9,8 @@ namespace Game.Code.Infrastructure
 {
     public class Game : MonoBehaviour
     {
+        [SerializeField] private MainHud mainHud;
+        
         [Header("Blue player")]
         [SerializeField] private Plate[] bluePlates;
         [SerializeField] private RollPlace rollPlaceBlue;
@@ -28,8 +31,9 @@ namespace Game.Code.Infrastructure
 
         private Player _bluePlayer;
         private Player _redPlayer;
-        
         private Player _activePlayer;
+
+        public MainHud MainHud => mainHud;
 
         public static Game Instance;
 
