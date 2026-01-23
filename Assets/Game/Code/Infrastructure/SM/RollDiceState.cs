@@ -17,7 +17,7 @@ namespace Game.Code.Infrastructure.SM
 
         public void Enter(object param = null)
         {
-            _rollPlace.Enable(_playerPlates);
+            _rollPlace.Generate(_playerPlates);
         }
 
         public void Update()

@@ -2,14 +2,13 @@ using System.Linq;
 using Game.Code.Infrastructure.SM;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using TMPro;
 
 namespace Game.Code.Logic
 {
     public class Plate : MonoBehaviour, IPointerClickHandler
     {
-        [SerializeField] private GameObject shiningEffect;
-        [SerializeField] private TextMeshProUGUI scoreText;
+        [SerializeField] private SpriteRenderer cookiePlace;
+        [SerializeField] private Sprite[] cookies;
 
         private Infrastructure.Game _game;
         private PlayerType _playerType;
@@ -43,7 +42,8 @@ namespace Game.Code.Logic
             Filled = true;
             
             Score = _rollPlace.Score;
-            scoreText.text = Score.ToString();
+            cookiePlace.sprite = GetCookieByScore(Score);
+            cookiePlace.enabled = true;
 
             var enemyColumn = _game.GetEnemyColumn(_playerType, Column);
             enemyColumn.Where(plate => plate.Score == Score).ToList().ForEach(plate => plate.Clear());
@@ -65,23 +65,19 @@ namespace Game.Code.Logic
         public void Enable()
         {
             _canSet = true;
-
-            if (!Filled)
-            {
-                shiningEffect.SetActive(true);
-            }
         }
+
+        private Sprite GetCookieByScore(int score) => cookies[score - 1];
 
         private void Disable()
         {
             _canSet = false;
-            shiningEffect.SetActive(false);
         }
 
         private void Clear()
         {
             Score = 0;
-            scoreText.text = "-";
+            cookiePlace.enabled = false;
             
             Filled = false;
         }

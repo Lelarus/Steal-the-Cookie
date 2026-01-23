@@ -47,11 +47,19 @@ namespace Game.Code.Infrastructure
             _stateMachine.Enter<ResultsState>();
         }
 
-        public void CalculateAllScores(TextMeshProUGUI col1, TextMeshProUGUI col2, TextMeshProUGUI col3)
+        public int CalculateAllScores(TextMeshProUGUI col1, TextMeshProUGUI col2, TextMeshProUGUI col3)
         {
-            col1.text = CalculateScore(Column1).ToString();
-            col2.text = CalculateScore(Column2).ToString();
-            col3.text = CalculateScore(Column3).ToString();
+            var col1Score = CalculateScore(Column1);
+            var col2Score = CalculateScore(Column2);
+            var col3Score = CalculateScore(Column3);
+            
+            var totalScore = col1Score + col2Score + col3Score;
+            
+            col1.text = col1Score.ToString();
+            col2.text = col2Score.ToString();
+            col3.text = col3Score.ToString();
+
+            return totalScore;
         }
 
         private void SetColumn(IEnumerable<Plate> plates, Column column)

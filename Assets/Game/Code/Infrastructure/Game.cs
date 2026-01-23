@@ -8,24 +8,26 @@ namespace Game.Code.Infrastructure
 {
     public class Game : MonoBehaviour
     {
-        [Header("Player 1")]
-        [SerializeField] private Plate[] player1Plates;
-        [SerializeField] private RollPlace rollPlace1;
-        [SerializeField] private GameObject chooseActionPanel1;
-        [SerializeField] private TextMeshProUGUI p1Col1Text;
-        [SerializeField] private TextMeshProUGUI p1Col2Text;
-        [SerializeField] private TextMeshProUGUI p1Col3Text;
+        [Header("Blue player")]
+        [SerializeField] private Plate[] bluePlates;
+        [SerializeField] private RollPlace rollPlaceBlue;
+        [SerializeField] private GameObject choosePaperBlue;
+        [SerializeField] private TextMeshProUGUI player1TotalScore;
+        [SerializeField] private TextMeshProUGUI blueCol1Text;
+        [SerializeField] private TextMeshProUGUI blueCol2Text;
+        [SerializeField] private TextMeshProUGUI blueCol3Text;
 
-        [Header("Player 2")]
-        [SerializeField] private Plate[] player2Plates;
-        [SerializeField] private RollPlace rollPlace2;
-        [SerializeField] private GameObject chooseActionPanel2;
-        [SerializeField] private TextMeshProUGUI p2Col1Text;
-        [SerializeField] private TextMeshProUGUI p2Col2Text;
-        [SerializeField] private TextMeshProUGUI p2Col3Text;
+        [Header("Red player")]
+        [SerializeField] private Plate[] redPlates;
+        [SerializeField] private RollPlace rollPlaceRed;
+        [SerializeField] private GameObject choosePaperRed;
+        [SerializeField] private TextMeshProUGUI player2TotalScore;
+        [SerializeField] private TextMeshProUGUI redCol1Text;
+        [SerializeField] private TextMeshProUGUI redCol2Text;
+        [SerializeField] private TextMeshProUGUI redCol3Text;
 
-        private Player _player1;
-        private Player _player2;
+        private Player _bluePlayer;
+        private Player _redPlayer;
         
         private Player _activePlayer;
 
@@ -38,11 +40,11 @@ namespace Game.Code.Infrastructure
                 Instance = this;
             }
             
-            chooseActionPanel1.SetActive(false);
-            chooseActionPanel2.SetActive(false);
+            choosePaperBlue.SetActive(false);
+            choosePaperRed.SetActive(false);
             
-            _player1 = new Player(this, PlayerType.Player1, player1Plates, rollPlace1, chooseActionPanel1);
-            _player2 = new Player(this, PlayerType.Player2, player2Plates, rollPlace2, chooseActionPanel2);
+            _bluePlayer = new Player(this, PlayerType.Player1, bluePlates, rollPlaceBlue, choosePaperBlue);
+            _redPlayer = new Player(this, PlayerType.Player2, redPlates, rollPlaceRed, choosePaperRed);
             
             NextPlayerStep();
         }
@@ -54,16 +56,19 @@ namespace Game.Code.Infrastructure
 
         public void CalculateAllScores()
         {
-            _player1.CalculateAllScores(p1Col1Text, p1Col2Text, p1Col3Text);
-            _player2.CalculateAllScores(p2Col1Text, p2Col2Text, p2Col3Text);
+            var bluePlayerScore = _bluePlayer.CalculateAllScores(blueCol1Text, blueCol2Text, blueCol3Text);
+            var redPlayerScore = _redPlayer.CalculateAllScores(redCol1Text, redCol2Text, redCol3Text);
+
+            player1TotalScore.text = bluePlayerScore.ToString();
+            player2TotalScore.text = redPlayerScore.ToString();
         }
 
         public void ResultOrNextStep()
         {
-            var player1Score = CalculatePlayerScore(player1Plates);
-            var player2Score = CalculatePlayerScore(player2Plates);
+            var blueScore = CalculatePlayerScore(bluePlates);
+            var redScore = CalculatePlayerScore(redPlates);
 
-            if (player1Score + player2Score == 18)
+            if (blueScore == 9 || redScore == 9)
             {
                 Result();
             }
@@ -73,9 +78,9 @@ namespace Game.Code.Infrastructure
             }
         }
 
-        public Plate[] GetEnemyColumn(PlayerType playerType, Column column)
+        public IEnumerable<Plate> GetEnemyColumn(PlayerType playerType, Column column)
         {
-            var targetPlayer = playerType == PlayerType.Player1 ? _player2 : _player1;
+            var targetPlayer = playerType == PlayerType.Player1 ? _redPlayer : _bluePlayer;
             var enemyColumn = column switch
             {
                 Column.Column1 => targetPlayer.Column1,
@@ -90,14 +95,14 @@ namespace Game.Code.Infrastructure
 
         private void NextPlayerStep()
         {
-            _activePlayer = _activePlayer == _player1 ? _player2 : _player1;
+            _activePlayer = _activePlayer == _bluePlayer ? _redPlayer : _bluePlayer;
             _activePlayer.Step();
         }
 
         private void Result()
         {
-            _player1.ToResultState();
-            _player2.ToResultState();
+            _bluePlayer.ToResultState();
+            _redPlayer.ToResultState();
         }
     }
 }

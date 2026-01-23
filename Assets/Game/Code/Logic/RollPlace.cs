@@ -1,50 +1,44 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
-using TMPro;
+using Random = UnityEngine.Random;
 
 namespace Game.Code.Logic
 {
-    public class RollPlace : MonoBehaviour, IPointerClickHandler
+    public class RollPlace : MonoBehaviour
     {
-        [SerializeField] private TextMeshProUGUI scoreText;
+        [SerializeField] private Sprite[] cookies;
         
         private Plate[] _playerPlates;
         
-        private bool _active;
+        private SpriteRenderer _rollPlace;
         
         public int Score { get; private set; }
-        
-        public void OnPointerClick(PointerEventData eventData)
+
+        private void Awake()
         {
-            if (!_active)
-            {
-                return;
-            }
+            _rollPlace = GetComponent<SpriteRenderer>();
+            _rollPlace.enabled = false;
+        }
+
+        public void Generate(Plate[] playerPlates)
+        {
+            _playerPlates = playerPlates;
             
             Score = Random.Range(1, 7);
-            scoreText.text = Score.ToString();
+            _rollPlace.enabled = true;
+            _rollPlace.sprite = GetCookieByScore(Score);
 
             foreach (var plate in _playerPlates)
             {
                 plate.Enable();
             }
-
-            _active = false;
-        }
-
-        public void Enable(Plate[] playerPlates)
-        {
-            _playerPlates = playerPlates;
-            
-            _active = true;
         }
         
         public void Disable()
         {
             Score = 0;
-            scoreText.text = "-";
-            
-            _active = false;
+            _rollPlace.enabled = false;
         }
+        
+        private Sprite GetCookieByScore(int score) => cookies[score - 1];
     }
 }
