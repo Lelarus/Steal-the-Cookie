@@ -9,6 +9,8 @@ namespace Game.Code.Infrastructure
 {
     public class Game : MonoBehaviour
     {
+        [SerializeField] private GameObject fade;
+        [SerializeField] private RandomCake randomCake;
         [SerializeField] private MainHud mainHud;
         
         [Header("Blue player")]
@@ -33,7 +35,9 @@ namespace Game.Code.Infrastructure
         private Player _redPlayer;
         private Player _activePlayer;
 
+        public RandomCake RandomCake => randomCake;
         public MainHud MainHud => mainHud;
+        public Player ActivePlayer => _activePlayer;
 
         public static Game Instance;
 
@@ -94,12 +98,16 @@ namespace Game.Code.Infrastructure
 
             return enemyColumn;
         }
+        
+        public Player GetOppositePlayer() => _activePlayer == _bluePlayer ? _redPlayer : _bluePlayer;
+
+        public void ToggleFade(bool toggle) => fade.SetActive(toggle);
 
         private int CalculatePlayerScore(IEnumerable<Plate> plates) => plates.Where(p => p.Filled).ToList().Count;
 
         private void NextPlayerStep()
         {
-            _activePlayer = _activePlayer == _bluePlayer ? _redPlayer : _bluePlayer;
+            _activePlayer = GetOppositePlayer();
             _activePlayer.Step();
         }
 

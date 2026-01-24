@@ -18,6 +18,7 @@ namespace Game.Code.Infrastructure.SM
 
         public void Enter(object param = null)
         {
+            Game.Instance.ToggleFade(true);
             _chooseActionPanel.SetActive(true);
             
             _chooseActionPanel.GetComponent<ChooseActionPanel>().ResetButtons();

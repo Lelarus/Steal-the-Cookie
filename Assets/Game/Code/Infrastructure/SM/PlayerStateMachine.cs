@@ -24,10 +24,10 @@ namespace Game.Code.Infrastructure.SM
             };
         }
 
-        public void Enter<TState>() where TState : class, IState
+        public void Enter<TState>(object param = null) where TState : class, IState
         {
             IState state = ChangeState<TState>();
-            state.Enter();
+            state.Enter(param);
         }
 
         private TState ChangeState<TState>() where TState : class, IState
