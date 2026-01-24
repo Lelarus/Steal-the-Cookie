@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 18146cd4d37dc774f9b57909b4e60a03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -10379991370638026
+    second: Crush_Cookie_0
+  - first:
+      213: -5268671297804219061
+    second: Crush_Cookie_1
+  - first:
+      213: -4657194221612996636
+    second: Crush_Cookie_2
+  - first:
+      213: 5573799770007356682
+    second: Crush_Cookie_3
+  - first:
+      213: -2921123644897461618
+    second: Crush_Cookie_4
+  - first:
+      213: -3621523767361495067
+    second: Crush_Cookie_5
+  - first:
+      213: -5035926504221094991
+    second: Crush_Cookie_6
+  - first:
+      213: 5730031905067598889
+    second: Crush_Cookie_7
+  - first:
+      213: 2237270972467301890
+    second: Crush_Cookie_8
+  - first:
+      213: 6406706212179117091
+    second: Crush_Cookie_9
+  - first:
+      213: 2037857509526873614
+    second: Crush_Cookie_10
+  - first:
+      213: 2865563471005775142
+    second: Crush_Cookie_11
+  - first:
+      213: -5691146509351111481
+    second: Crush_Cookie_12
+  - first:
+      213: -1974362638044261145
+    second: Crush_Cookie_13
+  - first:
+      213: 6887641705536989527
+    second: Crush_Cookie_14
+  - first:
+      213: -3845957650504956167
+    second: Crush_Cookie_15
+  - first:
+      213: 5484650883063397630
+    second: Crush_Cookie_16
+  - first:
+      213: 8938557072636363468
+    second: Crush_Cookie_17
+  - first:
+      213: 1003399284389326678
+    second: Crush_Cookie_18
+  - first:
+      213: -8152476484535679723
+    second: Crush_Cookie_19
+  - first:
+      213: 7599597984309620259
+    second: Crush_Cookie_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Crush_Cookie_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 271
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63dd49de37f1bdff0800000000000000
+      internalID: -10379991370638026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 291
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4d45188e5be1e6b0800000000000000
+      internalID: -5268671297804219061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 309
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e761c2c7825e5fb0800000000000000
+      internalID: -4657194221612996636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 314
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05417c0c5d1a5d40800000000000000
+      internalID: 5573799770007356682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 317
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a74e095851677d0800000000000000
+      internalID: -2921123644897461618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 288
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ef98cc3253cdbdc0800000000000000
+      internalID: -3621523767361495067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 266
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb4de0a68bcc1ab0800000000000000
+      internalID: -5035926504221094991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 237
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924853d98a9258f40800000000000000
+      internalID: 5730031905067598889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 26
+        width: 276
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20ec43c88126c0f10800000000000000
+      internalID: 2237270972467301890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_9
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 249
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32489351b5139e850800000000000000
+      internalID: 6406706212179117091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 175
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06263e9b9ce74c10800000000000000
+      internalID: 2037857509526873614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_11
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 190
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62572a26bc684c720800000000000000
+      internalID: 2865563471005775142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_12
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 83
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c43c69176cf401b0800000000000000
+      internalID: -5691146509351111481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_13
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 88
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4919d24a7a994e0800000000000000
+      internalID: -1974362638044261145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 759a2be83a1d59f50800000000000000
+      internalID: 6887641705536989527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_15
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 17
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f6c474c4e960aac0800000000000000
+      internalID: -3845957650504956167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_16
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 6
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efcb6025be46d1c40800000000000000
+      internalID: 5484650883063397630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_17
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 38
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc2cb0f8c422c0c70800000000000000
+      internalID: 8938557072636363468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_18
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 6
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65f28e9355acced00800000000000000
+      internalID: 1003399284389326678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_19
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 4
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515868bb4d59cde80800000000000000
+      internalID: -8152476484535679723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crush_Cookie_20
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 9
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32eac823a12377960800000000000000
+      internalID: 7599597984309620259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Crush_Cookie_0: -10379991370638026
+      Crush_Cookie_1: -5268671297804219061
+      Crush_Cookie_10: 2037857509526873614
+      Crush_Cookie_11: 2865563471005775142
+      Crush_Cookie_12: -5691146509351111481
+      Crush_Cookie_13: -1974362638044261145
+      Crush_Cookie_14: 6887641705536989527
+      Crush_Cookie_15: -3845957650504956167
+      Crush_Cookie_16: 5484650883063397630
+      Crush_Cookie_17: 8938557072636363468
+      Crush_Cookie_18: 1003399284389326678
+      Crush_Cookie_19: -8152476484535679723
+      Crush_Cookie_2: -4657194221612996636
+      Crush_Cookie_20: 7599597984309620259
+      Crush_Cookie_3: 5573799770007356682
+      Crush_Cookie_4: -2921123644897461618
+      Crush_Cookie_5: -3621523767361495067
+      Crush_Cookie_6: -5035926504221094991
+      Crush_Cookie_7: 5730031905067598889
+      Crush_Cookie_8: 2237270972467301890
+      Crush_Cookie_9: 6406706212179117091
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

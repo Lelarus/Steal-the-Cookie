@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: ec958ef87e660aa49ae82191ed76fc71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6858067539730535873
+    second: Cast_Cookie_0
+  - first:
+      213: -2118610307873847322
+    second: Cast_Cookie_1
+  - first:
+      213: 3587584876510455134
+    second: Cast_Cookie_2
+  - first:
+      213: 5514306873097605737
+    second: Cast_Cookie_3
+  - first:
+      213: 552412342697455322
+    second: Cast_Cookie_4
+  - first:
+      213: 4434614343126472685
+    second: Cast_Cookie_5
+  - first:
+      213: -4885418727818438901
+    second: Cast_Cookie_6
+  - first:
+      213: 2243030159758182659
+    second: Cast_Cookie_7
+  - first:
+      213: 4167710175416116370
+    second: Cast_Cookie_8
+  - first:
+      213: -7652078405707451248
+    second: Cast_Cookie_9
+  - first:
+      213: -1406582618122930404
+    second: Cast_Cookie_10
+  - first:
+      213: 3939476447753493636
+    second: Cast_Cookie_11
+  - first:
+      213: 3606378342212743025
+    second: Cast_Cookie_12
+  - first:
+      213: -438986232080483081
+    second: Cast_Cookie_13
+  - first:
+      213: 5121598944476331416
+    second: Cast_Cookie_14
+  - first:
+      213: -1261244804582068104
+    second: Cast_Cookie_15
+  - first:
+      213: 6531173441568679929
+    second: Cast_Cookie_16
+  - first:
+      213: -6243593969302209057
+    second: Cast_Cookie_17
+  - first:
+      213: -8173913479333748883
+    second: Cast_Cookie_18
+  - first:
+      213: -808258108796005491
+    second: Cast_Cookie_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cast_Cookie_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 271
+        width: 40
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5964f7710cc2f50800000000000000
+      internalID: 6858067539730535873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 291
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7c2bd562f2992e0800000000000000
+      internalID: -2118610307873847322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 309
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5528f5ff69a9c130800000000000000
+      internalID: 3587584876510455134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 314
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9625a7192e0c68c40800000000000000
+      internalID: 5514306873097605737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_4
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 317
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adee50059109aa700800000000000000
+      internalID: 552412342697455322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_5
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 287
+        width: 50
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de7d7eddf3aea8d30800000000000000
+      internalID: 4434614343126472685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_6
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 266
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0757551d81833cb0800000000000000
+      internalID: -4885418727818438901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_7
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 237
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 309cfd4db08d02f10800000000000000
+      internalID: 2243030159758182659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_8
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 249
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2946574b25ea6d930800000000000000
+      internalID: 4167710175416116370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_9
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 175
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 094be528b3b5ec590800000000000000
+      internalID: -7652078405707451248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_10
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 190
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c173b8baf80da7ce0800000000000000
+      internalID: -1406582618122930404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_11
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 83
+        width: 26
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48c5d5df4f4dba630800000000000000
+      internalID: 3939476447753493636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_12
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 88
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17fa04daefd6c0230800000000000000
+      internalID: 3606378342212743025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_13
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 10
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fc3e87095868e9f0800000000000000
+      internalID: -438986232080483081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_14
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 17
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89df687ca13931740800000000000000
+      internalID: 5121598944476331416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_15
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 6
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870341858882f7ee0800000000000000
+      internalID: -1261244804582068104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_16
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 38
+        width: 51
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7aa2734a363aa50800000000000000
+      internalID: 6531173441568679929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_17
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 6
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd78f96d5c4a59a0800000000000000
+      internalID: -6243593969302209057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_18
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 4
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fd88f6ffc609e80800000000000000
+      internalID: -8173913479333748883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cast_Cookie_19
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 9
+        width: 23
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d83926a488d78c4f0800000000000000
+      internalID: -808258108796005491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Cast_Cookie_0: 6858067539730535873
+      Cast_Cookie_1: -2118610307873847322
+      Cast_Cookie_10: -1406582618122930404
+      Cast_Cookie_11: 3939476447753493636
+      Cast_Cookie_12: 3606378342212743025
+      Cast_Cookie_13: -438986232080483081
+      Cast_Cookie_14: 5121598944476331416
+      Cast_Cookie_15: -1261244804582068104
+      Cast_Cookie_16: 6531173441568679929
+      Cast_Cookie_17: -6243593969302209057
+      Cast_Cookie_18: -8173913479333748883
+      Cast_Cookie_19: -808258108796005491
+      Cast_Cookie_2: 3587584876510455134
+      Cast_Cookie_3: 5514306873097605737
+      Cast_Cookie_4: 552412342697455322
+      Cast_Cookie_5: 4434614343126472685
+      Cast_Cookie_6: -4885418727818438901
+      Cast_Cookie_7: 2243030159758182659
+      Cast_Cookie_8: 4167710175416116370
+      Cast_Cookie_9: -7652078405707451248
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
