@@ -17,6 +17,7 @@ namespace Game.Code.Logic
         private Plate[] _playerPlates;
         
         private bool _canSet;
+        private ActionType _actionType;
 
         public bool Filled { get; private set; }
         public int Score { get; private set; }
@@ -34,32 +35,47 @@ namespace Game.Code.Logic
         
         public void OnPointerClick(PointerEventData eventData)
         {
-            if (!_canSet || Filled)
+            if (_actionType == ActionType.Random)
             {
-                return;
+                if (!_canSet || Filled)
+                {
+                    return;
+                }
+                
+                Filled = true;
+                
+                Score = _rollPlace.Score;
+                cookiePlace.sprite = GetCookieByScore(Score);
+                cookiePlace.enabled = true;
+                
+                var enemyColumn = _game.GetEnemyColumn(_playerType, Column);
+                enemyColumn.Where(plate => plate.Score == Score).ToList().ForEach(plate => plate.Clear());
+                
+                _game.CalculateAllScores();
+
+                foreach (var plate in _playerPlates)
+                {
+                    plate.Disable();
+                }
+            
+                _rollPlace.Disable();
+            
+                Invoke(nameof(NextStepAfterRandom), 1.5f);
             }
-
-            Filled = true;
-            
-            Score = _rollPlace.Score;
-            cookiePlace.sprite = GetCookieByScore(Score);
-            cookiePlace.enabled = true;
-
-            var enemyColumn = _game.GetEnemyColumn(_playerType, Column);
-            enemyColumn.Where(plate => plate.Score == Score).ToList().ForEach(plate => plate.Clear());
-            
-            _game.CalculateAllScores();
-
-            foreach (var plate in _playerPlates)
+            else if (_actionType == ActionType.Steal)
             {
-                plate.Disable();
+                if (!_canSet || !Filled)
+                {
+                    return;
+                }
+                
+                foreach (var plate in _playerPlates)
+                {
+                    plate.Disable();
+                }
+                
+                _stateMachine.Enter<RollStealState>(this);
             }
-            
-            _rollPlace.Disable();
-            
-            _stateMachine.Enter<WaitingUntilState>();
-            
-            Infrastructure.Game.Instance.ResultOrNextStep();
         }
 
         public void Enable()
@@ -67,14 +83,22 @@ namespace Game.Code.Logic
             _canSet = true;
         }
 
+        public void SetActionType(ActionType actionType) => _actionType = actionType;
+
         private Sprite GetCookieByScore(int score) => cookies[score - 1];
 
-        private void Disable()
+        public void Disable()
         {
             _canSet = false;
         }
 
-        private void Clear()
+        private void NextStepAfterRandom()
+        {
+            _stateMachine.Enter<WaitingUntilState>();
+            Infrastructure.Game.Instance.ResultOrNextStep();
+        }
+
+        public void Clear()
         {
             Score = 0;
             cookiePlace.enabled = false;

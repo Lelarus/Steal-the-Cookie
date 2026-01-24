@@ -41,9 +41,13 @@ namespace Game.Code.Logic
             
             _chooseActionPanel.DisableButton();
             
-            Invoke(nameof(HidePaper), 0.3f);
+            Invoke(nameof(HidePaper), 0.4f);
         }
 
-        private void HidePaper() => _chooseActionPanel.Hide();
+        private void HidePaper()
+        {
+            Infrastructure.Game.Instance.ToggleFade(false);
+            _chooseActionPanel.Hide();
+        }
     }
 }

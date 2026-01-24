@@ -12,6 +12,8 @@ namespace Game.Code.Infrastructure
         private readonly PlayerStateMachine _stateMachine;
         
         public readonly Plate[] Column1, Column2, Column3;
+
+        public int AdditionalScore { get; set; } = 0;
         
         public Player(Game game, PlayerType playerType, Plate[] playerPlates, RollPlace rollPlace, GameObject chooseActionPanel)
         {
@@ -53,7 +55,7 @@ namespace Game.Code.Infrastructure
             var col2Score = CalculateScore(Column2);
             var col3Score = CalculateScore(Column3);
             
-            var totalScore = col1Score + col2Score + col3Score;
+            var totalScore = col1Score + col2Score + col3Score + AdditionalScore;
             
             col1.text = col1Score.ToString();
             col2.text = col2Score.ToString();

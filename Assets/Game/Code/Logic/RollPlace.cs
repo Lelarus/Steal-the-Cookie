@@ -29,6 +29,7 @@ namespace Game.Code.Logic
 
             foreach (var plate in _playerPlates)
             {
+                plate.SetActionType(ActionType.Random);
                 plate.Enable();
             }
         }
