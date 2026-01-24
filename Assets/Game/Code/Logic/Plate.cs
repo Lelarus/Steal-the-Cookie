@@ -9,20 +9,24 @@ namespace Game.Code.Logic
     {
         [SerializeField] private SpriteRenderer cookiePlace;
         [SerializeField] private Sprite[] cookies;
+        [SerializeField] private Animator castCookie;
+        [SerializeField] private Animator crushCookie;
 
         private Infrastructure.Game _game;
         private PlayerType _playerType;
         private PlayerStateMachine _stateMachine;
         private RollPlace _rollPlace;
         private Plate[] _playerPlates;
-        
+
         private bool _canSet;
         private ActionType _actionType;
 
         public bool Filled { get; private set; }
         public int Score { get; private set; }
-        
+
         public Column Column { get; set; }
+        
+        private static readonly int Show = Animator.StringToHash("Show");
 
         public void Construct(Infrastructure.Game game, PlayerType playerType, PlayerStateMachine stateMachine, RollPlace rollPlace, Plate[] playerPlates)
         {
@@ -59,6 +63,8 @@ namespace Game.Code.Logic
                 }
             
                 _rollPlace.Disable();
+                
+                castCookie.SetTrigger(Show);
             
                 Invoke(nameof(NextStepAfterRandom), 1.5f);
             }
@@ -102,6 +108,7 @@ namespace Game.Code.Logic
         {
             Score = 0;
             cookiePlace.enabled = false;
+            crushCookie.SetTrigger(Show);
             
             Filled = false;
         }

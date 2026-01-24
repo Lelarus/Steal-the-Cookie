@@ -2,8 +2,8 @@ namespace Game.Code
 {
     public enum PlayerType
     {
-        Player1,
-        Player2
+        RedPlayer,
+        BluePlayer
     }
 
     public enum ActionType

@@ -11,7 +11,7 @@ namespace Game.Code.Infrastructure.SM
 
         public void Enter(object param = null)
         {
-            Game.Instance.MainHud.ShowResults();
+            
         }
 
         public void Update()

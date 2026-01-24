@@ -4,6 +4,7 @@ using Game.Code.Logic;
 using Game.Code.UI;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace Game.Code.Infrastructure
 {
@@ -14,6 +15,7 @@ namespace Game.Code.Infrastructure
         [SerializeField] private MainHud mainHud;
         
         [Header("Blue player")]
+        [SerializeField] private SpriteRenderer blueMark;
         [SerializeField] private Plate[] bluePlates;
         [SerializeField] private RollPlace rollPlaceBlue;
         [SerializeField] private GameObject choosePaperBlue;
@@ -23,6 +25,7 @@ namespace Game.Code.Infrastructure
         [SerializeField] private TextMeshProUGUI blueCol3Text;
 
         [Header("Red player")]
+        [SerializeField] private SpriteRenderer redMark;
         [SerializeField] private Plate[] redPlates;
         [SerializeField] private RollPlace rollPlaceRed;
         [SerializeField] private GameObject choosePaperRed;
@@ -51,8 +54,8 @@ namespace Game.Code.Infrastructure
             choosePaperBlue.SetActive(false);
             choosePaperRed.SetActive(false);
             
-            _bluePlayer = new Player(this, PlayerType.Player1, bluePlates, rollPlaceBlue, choosePaperBlue);
-            _redPlayer = new Player(this, PlayerType.Player2, redPlates, rollPlaceRed, choosePaperRed);
+            _bluePlayer = new Player(this, PlayerType.RedPlayer, bluePlates, rollPlaceBlue, choosePaperBlue);
+            _redPlayer = new Player(this, PlayerType.BluePlayer, redPlates, rollPlaceRed, choosePaperRed);
             
             NextPlayerStep();
         }
@@ -76,9 +79,13 @@ namespace Game.Code.Infrastructure
             var blueScore = CalculatePlayerScore(bluePlates);
             var redScore = CalculatePlayerScore(redPlates);
 
-            if (blueScore == 9 || redScore == 9)
+            if (blueScore == 9)
             {
-                Result();
+                Result(PlayerType.BluePlayer);
+            }
+            else if (redScore == 9)
+            {
+                Result(PlayerType.RedPlayer);
             }
             else
             {
@@ -88,7 +95,7 @@ namespace Game.Code.Infrastructure
 
         public IEnumerable<Plate> GetEnemyColumn(PlayerType playerType, Column column)
         {
-            var targetPlayer = playerType == PlayerType.Player1 ? _redPlayer : _bluePlayer;
+            var targetPlayer = playerType == PlayerType.RedPlayer ? _redPlayer : _bluePlayer;
             var enemyColumn = column switch
             {
                 Column.Column1 => targetPlayer.Column1,
@@ -109,12 +116,19 @@ namespace Game.Code.Infrastructure
         {
             _activePlayer = GetOppositePlayer();
             _activePlayer.Step();
+            
+            redMark.enabled = _activePlayer == _redPlayer;
+            blueMark.enabled = _activePlayer == _bluePlayer;
         }
 
-        private void Result()
+        private void Result(PlayerType winner)
         {
             _bluePlayer.ToResultState();
             _redPlayer.ToResultState();
+
+            mainHud.ShowResults(winner);
         }
+
+        public void ReloadScene() => SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

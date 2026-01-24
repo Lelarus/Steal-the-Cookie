@@ -8,15 +8,18 @@ namespace Game.Code.UI
     {
         [SerializeField] private Sprite[] cakes;
         [SerializeField] private SpriteRenderer target;
+        [SerializeField] private Animator hit;
+        [SerializeField] private Animator miss;
 
         private Animator _animator;
         
         private PlayerStateMachine _stateMachine;
         private Plate _targetPlate;
-
-        private static readonly int Cake = Animator.StringToHash("NewCake");
-
+        
         private int _plateScore, _cakeToSteal;
+        
+        private static readonly int Cake = Animator.StringToHash("NewCake");
+        private static readonly int Show = Animator.StringToHash("Show");
 
         private void Awake()
         {
@@ -42,6 +45,15 @@ namespace Game.Code.UI
         {
             target.enabled = true;
             target.sprite = cakes[_cakeToSteal - 1];
+
+            if (_plateScore == _cakeToSteal)
+            {
+                hit.SetTrigger(Show);
+            }
+            else
+            {
+                miss.SetTrigger(Show);
+            }
             
             Invoke(nameof(NewCakeAction), 1.5f);
         }
